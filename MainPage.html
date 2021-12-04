@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballina</title>
+    <link rel="stylesheet" href="MainPageStyle.css"/>
 </head>
 <body>
     <header>
@@ -49,7 +50,7 @@
         <div class="lower-header">
             <div class="logo">
                 <h1>DEB Telecom</h1>
-                <h6>Motto</h6>
+                <p>Motto</p>
             </div>
             <div class="kerko">
                 <input type="search" placeholder="Kerko ne faqen tone">
@@ -83,20 +84,35 @@
             </nav>
         </div>
     </header>
+    <!--Ketu fillon permbajtja-->
     <main>
-        <section>
-        <article id="interneti">
-            <h2>Interneti</h2>
-            <p>Internet i shpejte dhe stabil me fije optike
+        <section class="fotot_levizese">
+            <figure>
+                <!-- 880px, 350px-->
+                <img class="reklame" width="100%" height="auto" src="Ballina_Foto/1slide.jpg"/>
+                <figcaption>Pakoja Start eshte pako qe perfshin internet
+                    me fije optike me shpejtesi deri 250<abbr title="Mega bits per second">Mbps</abbr>
+                </figcaption>
+            </figure>
+        </section>
+        <!-- Ketu fillojn sherbimet -->
+        <section id="sherbimet">
+            <table id="pershkrimi_sherbimeve">
+                <td width="(100/4)%">
+        <article class="sherbim">
+            <h2 class="titull_sherbimi" style="text-align:center;">Interneti</h2>
+            <p class="pershkrim_sherbimi">Internet i shpejte dhe stabil me fije optike
                 deri ne shtepite tuaja.<br/>
                 I pershtatshme per cdo ambient, qofte
                 ne shtepite tuaja apo ne vendin e punes.<br/>
                 Per me shume detaje, klikoni <a href="produktet.html">ketu</a>
             </p>
         </article>
-        <article>
-            <h2>Televizioni</h2>
-            <p>
+        </td>
+        <td width="(100/4)%">
+        <article class="sherbim">
+            <h2 class="titull_sherbimi">Televizioni</h2>
+            <p class="pershkrim_sherbimi">
                 <ol>
                 <li>Programacioni me i pasur dhe me i gjere ne vend dhe rajon</li>
                 <li>Kanale televizive nga e gjithe bota</li>
@@ -105,44 +121,64 @@
                 <strong>Qendroni ne nje hap me kohen.</strong>
             </p>
         </article>
-        <section>
-            <h2>Telefonia mobile</h2>
-            <p>
+        </td>
+        <td width="(100/4)%">
+            <article class="sherbim">
+            <h2 class="titull_sherbimi">Telefonia mobile</h2>
+            <p class="pershkrim_sherbimi">
                 <strong>E gjithe bota ne xhepin tuaj!</strong><br/>
-                <ol>
-                    <li>Mbulueshmeri 97% e Kosoves me sinjal telefonik</li>
-                    <li>Kualitet i papare i bisedave telefonike</li>
-                    <li>Internet mobil me teknologjine 4G LTE</li>
-                </ol>
+            </p>
+            <ol>
+                <li>Mbulueshmeri <u>97% e Republikes se Kosoves</u> me sinjal telefonik</li>
+                <li>Kualitet i papare i bisedave telefonike</li>
+                <li>Internet mobil me teknologjine 4G LTE</li>
+            </ol>
+        </article>
+        </td>
+        <td width="(100/4)%">
+        <article class="sherbim">
+            <h2 class="titull_sherbimi">DEB<sub>away</sub></h2>
+            <p class="pershkrim_sherbimi"></p>Shiko programet televizive te preferuara nga cdo vend i botes<br/>
+            Shkarko aplikacionin <em><b>DEBaway</b></em> ne <i>iOS</i> dhe <i>Android</i>
             </p>
         </article>
-        <article>
-            <h2>DEB<sub>away</sub></h2>
-            <p>Shiko programet televizive te preferuara nga cdo vend i botes<br/>
-            Shkarko aplikacionin <em>DEBaway</em> ne <em>iOS</em> dhe <em>Android</em>
-            </p>
-        </article>
+        </td>
+        </table>
         </section>
+        <!-- Ketu fillon quota -->
         <section id="quote">
-            <blockquote cite="https://smallbusiness.chron.com/business-strategies-companies-2622.html">
+            <hr/>
+            <blockquote align="center" cite="https://smallbusiness.chron.com/business-strategies-companies-2622.html">
                 <em>"A satisfied customer is the best business strategy of all"</em>
             </blockquote>
+            <hr/>
         </section>
+        <!-- Ketu fillojn konkurset -->
         <section>
+        <table id="konkurset">
+            <td width="(100/4)%">
             <h3>Ne ju mirepresim ne ekipin tone!</h3>
             <h4>Shikoni konkurset e reja dhe behuni nje nga ne!</h4>
-            <article>
+            </td>
+            <td width="(100/4)%">
+            <article class="konkurs">
                 <img src="Ballina_Foto/konkursi_it.jpg" alt="Disa kompjuter ne zyren e IT-se"/>
                 <p>Konkurs per IT ne zyren tone ne Prishtine</p>
             </article>
-            <article>
+        </td>
+        <td width="(100/4)%">
+            <article class="konkurs">
                 <img src="Ballina_Foto/konkursi_administrator_rrjeti.jpeg" alt="Pamje e struktures se rrjetes kompjuterike"/>
                 <p>Konkurs per mirembajtes rrjeti (Network Administrator) ne zyren tone ne Gjilan</p>
             </article>
-            <article>
+            </td>
+            <td width="(100/4)%">
+            <article class="konkurs">
                 <img src="Ballina_Foto/konkursi_qendra_thirrjeve.png" alt="Foto per konkursin e qendres se thirrjeve"/>
                 <p>Konkurs per qendren e thirrjeve ne <em>Feriaj</em></p>
             </article>
+            </td>
+            </table>
         </section>
     </main>
     <footer>
