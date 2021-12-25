@@ -1,0 +1,54 @@
+main {
+    margin: 0px 50px 0px 50px;
+}
+
+
+
+#pakot_internetit {
+    display:grid;
+    grid-template-columns:  repeat(3,30%);
+    grid-auto-rows: 30%;
+    grid-auto-rows: auto;
+    grid-column-gap: 40px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.foto_pakoje {
+    width:50%;
+    height:auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 8px #ccc;
+}
+
+#grid-title {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    line-height:40px;
+    padding-top: 40px;
+}
+
+.pako {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width:fit-content;
+    height:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap:break-word;
+}
+
+#pakot_televizioni {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pako.televizioni {
+    height: auto;
+}

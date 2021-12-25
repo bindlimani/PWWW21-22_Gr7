@@ -10,8 +10,44 @@
 </head>
 <body>
     <style>
-        th, td {
+        .permbajtja th, td {
             border: 1px solid #aaa;
+        }
+        h2 {
+            font-weight:normal;
+        }
+        .permbajtja {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        #tabela_e_konkurseve {
+            border-radius: 4px;
+            box-shadow: 0px 0px 7px gray;
+            border-spacing: 4px;
+            text-align: center;
+        }
+
+        #tabela_e_konkurseve caption {
+            margin-bottom: 10px;
+        }
+
+        #tabela_e_konkurseve td,th{
+            border-radius:4px;
+            padding: 10px;
+            margin: 4px;
+        }
+
+        input {
+            margin-bottom: 20px;
+            margin-top: 4px;
+        }
+
+        input[type="text"] {
+            border-radius:4px;
+            border: 1px #ccc;
+            border-style:double;
+            font-size:large;
         }
     </style>
     <header>
@@ -99,6 +135,7 @@
             </nav>
 <h1 style="text-align: center; color:#aaa;font-style: italic; font-weight: lighter; margin-bottom:20px;">Konkurset</h1>
 <hr/>
+<div class="permbajtja">
 <h2>Karriera ne <em>DEB</em></h2>
 <p>Ne si DEB, mundohemi te ju ofrojm klienteve tane
     ambient pune bazuar ne praktikat e kompanive me
@@ -114,7 +151,7 @@
     </ul>
 </p>
 <h2>Ne vijim shihni disa nga pozitat e hapura ne DEB:</h2>
-    <table align="center" style="border: 1px solid #aaa; width: 100%;">
+    <table align="center" style="border: 1px solid #aaa; width: 100%;" id="tabela_e_konkurseve">
         <caption>Pozitat e hapura ne DEB</caption>
         <colgroup span="2">
             <col span="2" style="background-color: #eee;"/>
@@ -188,29 +225,32 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </section>
-    <section>
+    <section class="permbajtja">
         <h4>Per me shume detaje rreth pozitave vijuese,
             ju lutemi te na kontaktoni ne emailin
             <a href="mailto:klientet@debmail.com?subject=Pyetje rreth konkurseve">klientet@debmail.com</a><br/>
             ose permes numrit te telefonit <a href="tel:+38342404040">042-404-040</a>
         </h4>
     </section>
-    <section id="aplikimi">
+    <section class="permbajtja" id="aplikimi">
         <h4>Per te aplikuar, plotesoni formularin ne vijim:</h4>
         <form action="" method="post">
-            <label for="emri">Shenoni emrin tuaj</label>
+            <fieldset>
+                <legend>Formulari per aplikim</legend>
+            <label for="emri">Shenoni emrin tuaj</label><br/>
             <input type="text" name="emri" placeholder="Emri"/><br/>
-            <label for="mbiemri">Shenoni mbiemrin tuaj</label>
+            <label for="mbiemri">Shenoni mbiemrin tuaj</label><br/>
             <input type="text" name="mbiemri" placeholder="Mbiemri"><br/>
-            <label for="email">Shenoni emailin tuaj</label>
+            <label for="email">Shenoni emailin tuaj</label><br/>
             <input type="email" name="email"/><br/>
-            <label for="pervoje">A keni pasur eksperience ne poziten qe po aplikoni?</label>
+            <label for="pervoje">A keni pasur eksperience ne poziten qe po aplikoni?</label><br/>
             <input type="radio" name="pervoje" value="po"/>Po
             <input type="radio" name="pervoje" value="jo"/>Jo<br/>
-            <label for="dokumentet">Bashkangjitni CV dhe letren motivuese ne PDF</label>
+            <label for="dokumentet">Bashkangjitni CV dhe letren motivuese ne PDF</label><br/>
             <input multiple type="file" name="dokumentet"/><br/>
-            
+        </fieldset>
         </form>
     </section>
     </main>
