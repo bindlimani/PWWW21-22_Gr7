@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="ProduktetStyle.css"/>
+    <!--<link rel="stylesheet" href="header.css"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    
+    <!-- Importimi i tekstit Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Produktet</title>
 </head>
 <body>
@@ -88,10 +94,12 @@
         </nav>
     </header>
     <main style="margin-top:150px;">
-    <h1>Produktet</h1>
+    
     <section id="sherbimet">
+        <h1 id="titulli">Produktet</h1>
+        <hr>
     <article id="interneti">
-        <p>DEB telecom ofron sherbime te internetit me kualitet
+        <p style="text-align: justify;"> DEB telecom ofron sherbime te internetit me kualitet
             dhe stabilitet me te larte ne Kosove dhe ne rajon.
             Sherbimet tona te internetit jane te parapara per
             perdorues individual <em>Pakot shtepiake</em> dhe
@@ -99,25 +107,25 @@
             Interneti yne vie tek ju permes kabllove me fije optike
             duke ofruar shpejtesi te larte.
         </p>
-        <h3>Pakot personale te internetit jane:</h3>
+        <h3 style="text-align: center; padding-top:20px;">Pakot personale te internetit jane:</h3>
         <div id="pakot_internetit">
         <div class="pako interneti">
-            <h4 >Pakoja "Fillestare"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/blue_cable.png"><br/>
+            <h4>Pakoja "Fillestare"</h4>
+            <img class="foto_pakoje" src="Produktet_Ikonat/blue_cable.png" alt="Kabllo interneti tek pakoja fillestare"><br/>
             <span>Internet deri ne <strong>20 <abbr title="Mega bits per second">Mbps</abbr></strong><br/>
             Transferi i te dhenave deri ne 100GB<br/></span>
             <h4><mark>9.99€</mark></h4>
         </div>
         <div class="pako interneti">
             <h4>Pakoja "Metro"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/red_cable.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/red_cable.png" alt="Kabllo interneti tek pakoja metro"><br/>
             <span>Internet deri ne <strong>50 Mbps</strong><br/>
             Transferi i te dhenave deri ne 500GB<br/></span>
             <h4><mark>14.99€</mark></h4>
         </div>
         <div class="pako interneti">
             <h4>Pakoja "Drita"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/yellow_cable.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/yellow_cable.png" alt="Kabllo interneti tek pakoja drita"><br/>
             <span>Internet deri ne <strong>250 Mbps</strong><br/>
             Transferi i te dhenave pa limit<br/></span>
             <h4><mark>19.99€</mark></h4>
@@ -126,7 +134,7 @@
         <h3 id="grid-title">Pakot per biznese(enterprise) te internetit jane:</h3>
         <div class="pako interneti enterprise">
             <h4>Pakoja "Bistro"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/blue_enterprise.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/blue_enterprise.png" alt="Pamje infrastrukture tek pakoja bistro"><br/>
             <span>Internet deri ne <strong>250 Mbps</strong><br/>
             Transferi i te dhenave pa limit<br/>
             Mbulim me wireless ne te gjithe hapesiren<br/>
@@ -135,7 +143,7 @@
         </div>
         <div class="pako interneti enterprise">
             <h4>Pakoja "Max"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/red_enterprise.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/red_enterprise.png" alt="Pamje infrastrukture tek pakoja enterprise"><br/>
             <span>Internet deri ne <strong>500 Mbps</strong><br/>
             Transferi i te dhenave pa limit<br/>
             Shpejtesi e garantuar minimale 100mbps<br/>
@@ -144,7 +152,7 @@
         </div>
         <div class="pako interneti enterprise">
             <h4>Pakoja "Kompania"</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/yellow_enterprise.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/yellow_enterprise.png" alt="Pamje infrastrukture tek pakoja kompania"><br/>
             <span>Internet deri ne <strong>1 <abbr title="Giga bit per second">Gbps</abbr></strong><br/>
             Transferi i te dhenave pa limit<br/>
             Shpejtesi e garantuar minimale 250mbps<br/>
@@ -155,7 +163,7 @@
     </article>
     <hr/>
     <article id="televizioni">
-        <p style="margin-top: 40px;">DEB ofron programacion te pasur televiziv me mbi 200
+        <p style="margin-top: 40px; text-align: justify;">DEB ofron programacion te pasur televiziv me mbi 200
             kanale nga vendi yne, rajoni dhe e gjithe bota.
             Permes resiverit DEB ju mund te shikoni
             kanalet tuaja te preferuara me kualitet shume
@@ -166,13 +174,13 @@
         <div id="pakot_televizioni">
         <div class="pako televizioni">
             <h4>Sherbimi TV kabllor</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/tv.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/tv.png" alt="Televizioni tek pakoja e televizionit"><br/>
             <span>250 kanale<br/>Kualitet <abbr title="2,048 x 1,080 pixels">2K</abbr></span>
             <h4><mark>5.99€</mark></h4>
         </div>
         <div class="pako televizioni">
             <h4>Sherbimi DEBaway</h4>
-            <img class="foto_pakoje" src="Produktet_Ikonat/debaway.png"><br/>
+            <img class="foto_pakoje" src="Produktet_Ikonat/debaway.png" alt="Ikona e aplikacionit debaway"><br/>
             <span>250 kanale ne kualitet <abbr title="1,920 x 1080 pixels">1080p</abbr>
                 ne cdo vend te botes <br/>vetem me nje
                 lidhje interneti.<br/>
@@ -183,6 +191,89 @@
         </div>
     </article>
     </section>
+    <section>
+        <h4>Disa shkurtesa me rendesi ne zhargonin e sherbimeve tona jane:</h4>
+        <dl>
+            <dt>FTTH</dt>
+            <dd>Sherbimi <i style="font-family: 'Times New Roman';">"Fiber to the home"</i></dd>
+            <dt>VoIP</dt>
+            <dd>Sherbimi <i style="font-family: 'Times New Roman'">Voice over Internet Protocol</i> me ane te se cilit komunikojme permes internetit</dd>
+            <dt>IPTV</dt>
+            <dd>Shfaqja e programeve televizive duke u bazuar ne lidhje te internetit</dd>
+            <dt>VOD</dt>
+            <dd>Shfaqja e filmave, dokumentareve dhe programacionit <i style="font-family: 'Times New Roman'">on demand</i></dd>
+        </dl>
+    </section>
 </main>
+<footer>
+    <table>
+        <tr>
+            <th>Rreth DEB-it</th>
+            <th>Linqe te tjera</th>
+            <th>Gazeta</th>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    DEB eshte nje kompani telekomunikimi me baze 					
+                    ne Kosove e themeluar ne vitin 2020					
+                    Nga nje kompani lokale me baze ne Prishtine, DEB u zhvillua					
+                    dhe tani eshte nje nder ofruesit me te mire te sherbimeve te					
+                    telekomunikacionit. 					
+
+                </p>
+                <a href="#">Lexo me shume</a>
+            </td>
+            <td rowspan="3">
+                <ul>
+                    <li>
+                        <a href="#">Pakoja MIX</a>
+                    </li>
+                    <li>
+                        <a href="#">Pakoja ME SHOQNI</a>
+                    </li>
+                    <li>
+                        <a href="#">Pakoja FAMILY</a>
+                    </li>
+                    <li>
+                        <a href="#">Pakoja BIG FAMILY</a>
+                    </li>
+                    <li>
+                        <a href="#"> Pakoja START</a>
+                    </li>
+                    <li>
+                        <a href="#">Pakoja SUPER START</a>
+                    </li>
+
+                </ul>
+            </td>
+            <td>
+                <p>Regjistrohuni ne gazeten tone elektronike dhe merrni ofertat tona te paret </p>
+                <input type="text" title="Emri" placeholder="Emri">
+                <input type="email" title="Email" placeholder="Shkruani emailin tuaj">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+        <tr>
+            <th>Pyetja e fundit</th>
+            <th>Na kontaktoni</th>
+        </tr>
+        <tr>
+            <td>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse at voluptates, reprehenderit aspernatur consequuntur omnis fugiat optio quam, quia officiis id aliquid voluptas illo delectus modi excepturi itaque deleniti.
+
+                </p>
+
+                <a href="#">Lexo me shume</a>
+            </td>
+            <td>
+                Tel:047 740 470 <br>
+                Email: kontakti@debmail.com
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <p>Copyright &copy; - All Rights Reserved - Domain Name</p>
+</footer>
 </body>
 </html>

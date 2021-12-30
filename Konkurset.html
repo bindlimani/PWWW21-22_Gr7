@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="header.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
     <title>Document</title>
+
+    <!-- Importimi i fontit Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
@@ -19,6 +24,10 @@
         .permbajtja {
             margin-left: 50px;
             margin-right: 50px;
+        }
+
+        .permbajtja h1,h2,h3,h4,h5,h6,p,ul,ol,li,table {
+            font-family: Montserrat;
         }
 
         #tabela_e_konkurseve {
@@ -48,6 +57,16 @@
             border: 1px #ccc;
             border-style:double;
             font-size:large;
+        }
+
+        #linku-per-tabele {
+            text-decoration: none;
+            border: 1px solid black;
+            padding: 2px 10px 2px 10px;
+            border-radius: 10px;
+            background: radial-gradient(white, black);
+            color: white;
+            text-shadow: 0px 0px 2px black;
         }
     </style>
     <header>
@@ -252,8 +271,10 @@
             <input multiple type="file" name="dokumentet"/><br/>
         </fieldset>
         </form>
+        <h4>Per te pare tabelen e konkurseve, klikoni <a id="linku-per-tabele" href="#tabela_e_konkurseve">ketu</a></h4>
     </section>
     </main>
+    
     <footer>
         <table>
             <tr>
@@ -276,7 +297,7 @@
                 <td rowspan="3">
                     <ul>
                         <li>
-                            <a href="#">Pakoja MIX</a>
+                            <a href="#" >Pakoja MIX</a>
                         </li>
                         <li>
                             <a href="#">Pakoja ME SHOQNI</a>
