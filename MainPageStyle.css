@@ -116,6 +116,18 @@ main table tr > td:last-child {
     animation-fill-mode: forwards;
 }
 
+#reklame:active {
+    animation-name:show;
+}
+@keyframes show {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes gradual-shadow {
     25% {
         box-shadow: 0px 0px 4px black;
@@ -129,6 +141,50 @@ main table tr > td:last-child {
     100% {
         box-shadow: 0px 0px 16px black;
     }
+}
+
+.buton_fotos {
+    margin:0;
+    padding:0;
+    line-height: 0;
+    border-radius: 40px;
+    width:15px;
+    height:15px;
+    border: none;
+    box-shadow:0px 0px 2px black;
+}
+
+.buton_fotos {
+    transition: width 0.4s, height 0.4s;
+    margin: 2px;
+}
+
+.buton_fotos:hover {
+    width: 30px;
+    height: 30px;
+}
+
+#butonat {
+    display:flex;
+    position:absolute;
+    text-align: right;
+    left:90%;
+    bottom:6%;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    #butonat {
+    display:flex;
+    position:absolute;
+    text-align: right;
+    left:85%;
+    bottom:6%;
+    }
+}
+
+.navigimi {
+    text-decoration: none;
 }
 
 main {

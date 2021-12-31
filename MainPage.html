@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="MainPageStyle.css"/>
     <link rel="stylesheet" href="header.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -65,39 +66,86 @@
     <!--Ketu fillon permbajtja-->
     <main>
         <nav>
-            <ul>
+            <ul style="list-style: none;">
                 <li>
-                    <a href="MainPage.html">Ballina</a>
+                    <a class="navigimi" href="MainPage.html">Ballina</a>
                 </li>
                 <li>
-                    <a href="rrethnesh.html">Rreth nesh</a>
-                </li>
-
-                <li>
-                    <a href="Produktet.html">Produktet</a>
+                    <a class="navigimi" href="rrethnesh.html">Rreth nesh</a>
                 </li>
 
                 <li>
-                    <a href="Konkurset.html">Konkurset</a>
+                    <a class="navigimi" href="Produktet.html">Produktet</a>
                 </li>
 
                 <li>
-                    <a href="/">Ofertat</a>
+                    <a class="navigimi" href="Konkurset.html">Konkurset</a>
                 </li>
 
                 <li>
-                    <a href="faqs.html">Pyetjet</a>
+                    <a class="navigimi" href="/">Ofertat</a>
+                </li>
+
+                <li>
+                    <a class="navigimi" href="faqs.html">Pyetjet</a>
                 </li>
             </ul>
         </nav>
+
+        <!--Script-->
+
         <section id="fotot_levizese">
+            <div>
             <figure>
                 <!-- 880px, 350px-->
-                <img class="reklame" width="100%" height="auto" src="Ballina_Foto/1slide.jpg"/>
-                <figcaption>Pakoja Start eshte pako qe perfshin internet
+                <img class="reklame" id="reklamat" width="100%" height="auto" src="Ballina_Foto/1slide.jpg"/>
+                <figcaption id="pershkrimi_fotos">Pakoja Start eshte pako qe perfshin internet
                     me fije optike me shpejtesi deri 250<abbr title="Mega bits per second">Mbps</abbr>
                 </figcaption>
+                <div id="butonat">
+                    <button class="buton_fotos" onclick="onButtonClick(0)"></button>
+                    <button class="buton_fotos" onclick="onButtonClick(1)"></button>
+                    <button class="buton_fotos" onclick="onButtonClick(2)"></button>
+                    <button class="buton_fotos" onclick="onButtonClick(3)"></button>
+                    <button class="buton_fotos" onclick="onButtonClick(4)"></button>
+                    </div>
             </figure>
+            
+        </div>
+            <script>
+                var locations = ["Ballina_Foto/1slide.jpg","Ballina_Foto/2slide.jpg","Ballina_Foto/3slide.jpg","Ballina_Foto/4slide.jpg","Ballina_Foto/5slide.jpg"];
+                var descriptions = ['Pakoja Start eshte pako qe perfshin internet me fije optike me shpejtesi deri 250<abbr title="Mega bits per second">Mbps</abbr>',
+            'Pakoja zgjat ne nja afat prej <b>24 muajsh</b> dhe perfshihet ne cmimin e telefoint',
+            'Deb<sub>away</sub> shkarkohet falas ndersa per perdorimin e tij, duhet te keni llogari DEB','Oferta zgjat deri me <em>10 Janar 2022</em>','Tarifa aplikohet per perdorimin jashte aplikacionit'];
+            
+            function changeImage(position) {
+                    $(document).ready(function() {
+                    $("button").click(function() {
+                        //i = i+1;
+                        //i = i%locations.length;
+                        $("#reklamat").animate({opacity: "0.0"});
+                        $("#reklamat").promise().done(function(){
+                            $("#reklamat").animate({opacity: "1.0"});
+                            $("#reklamat").attr("src",locations[i]);
+                        });
+                    });
+                });
+            }
+                var pershkrimi = document.getElementById("pershkrimi_fotos");
+
+                function onButtonClick(position) {
+                    $("button").click(function() {
+                        //i = i+1;
+                        //i = i%locations.length;
+                        $("#reklamat").animate({opacity: "0.0", duration: "fast"});
+                        $("#reklamat").promise().done(function(){
+                            $("#reklamat").animate({opacity: "1.0", duration: "1ms"});
+                            $("#reklamat").attr("src",locations[position]);
+                        });
+                        pershkrimi.innerHTML = descriptions[position];
+                    });
+                }
+            </script>
         </section>
         <!-- Ketu fillojn sherbimet -->
         <section id="sherbimet">
