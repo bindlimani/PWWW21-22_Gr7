@@ -1,5 +1,5 @@
 
- .upper-header{
+ /*.upper-header{
     background-color: #373C42;
     display: grid;
     grid-auto-flow: column;
@@ -179,11 +179,5 @@ section{
 }
 
 
+*/
 
-.upper-header ul li i::before {
-    margin-left: -6px;
-    /* margin-bottom: -5px; */
-    position: absolute;
-    top: 29px;
-    /* left: 110px; */
-}
