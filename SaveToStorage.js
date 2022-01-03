@@ -11,7 +11,7 @@ function onSubmit() {
 if(typeof(Storage) !== undefined) {
     var username = document.getElementById("username").value;
     var checkbox = document.getElementById("remember");
-    alert(username);
+    //alert(username);
     if(remember.checked === true) {
         //alert("Checked");
         localStorage.setItem("username", username);
