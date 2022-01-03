@@ -1,0 +1,31 @@
+main * {
+    background: none;
+    color:white;
+}
+
+table {
+    background: white;
+}
+
+table th,td {
+    color:black;
+}
+
+#titulli {
+    background: white;
+    padding: 20px;
+}
+
+fieldset {
+    background: white;
+    box-shadow: 0px 0px 20px red;
+}
+
+legend {
+    background-color: white;
+    border-radius:2px;
+}
+
+fieldset * {
+    color:black;
+}

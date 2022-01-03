@@ -88,3 +88,10 @@ main {
     font: 1em sans-serif;
 }
 
+#faqet {
+    list-style: none;
+}
+
+#faqet li a {
+    text-decoration: none;
+}
