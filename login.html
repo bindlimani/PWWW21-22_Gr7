@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
         type="text/css">
+    
     <title>Document</title>
 </head>
 
@@ -115,11 +116,14 @@
                     </div>
 
                     <div id="button-content">
-                        <button type="submit">Login</button>
+                        <button type="submit" onclick="onSubmit()">Login</button>
                     </div>
+
+                    <input type="checkbox" name="remember" id="remember"/><span style="color:white;">Me mbaj mend</span>
                 </div>
             </form>
         </section>
+        <span id="pershendetje" onload="onLoad()"></span>
     </main>
 
 
@@ -196,6 +200,8 @@
         <hr>
         <p>Copyright &copy; - All Rights Reserved - Domain Name</p>
     </footer>
+    <script type="text/javascript" src="SaveToStorage.js"></script>
+    <script type="text/javascript" src="printPershendetje.js"></script>
 </body>
 
 </html>

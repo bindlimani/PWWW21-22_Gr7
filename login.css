@@ -98,3 +98,18 @@ nav {
 .lower-header {
     height: 190px;
 }
+
+#pershendetje {
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+    position:fixed;
+    display: inline;
+    bottom:0;
+    right:0;
+    padding:10px;
+}
+
+#pershendetje:hover {
+    transform: rotateY(40deg);
+}
