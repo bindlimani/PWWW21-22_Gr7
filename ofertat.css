@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+}
+.llojet-e-ofertave ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 900px 900px;
+    background-color: #EDEDED;
+    padding:0;
+}
+.llojet-e-ofertave ul li a{
+    text-decoration: none;
+    font-size: 35px;
+    color:#202326;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+
+
+
+}
+.llojet-e-ofertave ul li{
+  
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    box-shadow: 1px 2px rgb(243, 241, 241);
+    padding: 80px 0;
+    text-align: center;
+    
+}
+
+
+.navigimi {
+    text-decoration: none;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.llojet-e-ofertave ul li:hover{
+    background-color: #cbcdcf;
+    }
+#telefonia-mobile{
+    display: grid;
+    grid-template-columns:  420px 420px 420px 420px;
+}
+#televizioni{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    margin-left: 50px;
+}
+#interneti{
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+  
+}
+#telefonia-mobile li{
+    text-align: center;
+    background-color: #EDEDED;
+    border-radius: 7px;
+    margin:10px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px rgb(139, 139, 139);
+  
+}
+#televizioni li{
+    text-align: center;
+    background-color: #EDEDED;
+    border-radius: 7px;
+    margin:10px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px rgb(139, 139, 139);
+  
+}
+#interneti li{
+    text-align: center;
+    background-color: #EDEDED;
+    border-radius: 7px;
+    margin:10px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px rgb(139, 139, 139);
+  
+}
+#debaway li{
+    text-align: center;
+    background-color: #EDEDED;
+    border-radius: 7px;
+    margin:10px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px rgb(139, 139, 139);
+  
+}
+h4{
+    color:#202326;
+    text-transform: uppercase;
+}
+i{
+    font-size: 70px;
+}
+.roaming table{
+    padding:0 100px;
+
+}
+li i{
+    color:rgba(15, 82, 100, 0.7);
+}
