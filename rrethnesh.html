@@ -13,6 +13,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
     <title>Rreth nesh</title>
     <style>
+        #div1 {
+          width: 350px;
+          height: 70px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+    <style>
+
       
     main {
          
@@ -142,7 +166,7 @@
         <div class="lower-header">
             <div class="logo">
                 <h1>DEB Telecom</h1>
-                <p>Motto</p>
+                <p>Shpejt e sigurtë sa s'ta merr mendja. </p>
             </div>
             <div class="kerko">
                 <input type="search" placeholder="Kerko ne faqen tone">
@@ -203,7 +227,7 @@
                         Perqindje keto, qe sipas trajektoreve tona, priten te rriten edhe me shume ne vitin ne
                         vijim.
                         <br>
-                        Per matjen e shpejtesis se internetit perdorni kete uebsajt  <a href="https://fast.com/" target="_blank">fast</a>
+                        Per matjen e shpejtesis se internetit perdorni kete   <a href="https://fast.com/" target="_blank">uebsajt.</a>
                     </p>
 
                 </div>
@@ -212,6 +236,25 @@
 
             </div>
         </div>
+        <div class="video-content" style="display: flex; justify-content: left;">
+            <div>
+                <video width="640" height="480" controls>
+                    <source src="vid2finale.mp4" type="video/mp4">
+                  </video>
+
+            </div>
+          <div style="display: flex; justify-content: center; width: 100%;margin-top: 100px;">
+            <div>
+           
+            <p>Drag the DEBTelecom image into the rectangle:</p>
+
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="drag1" src="debifoto.png" draggable="true" ondragstart="drag(event)" width="350" height="70">
+          </div>
+        </div>
+    </div>
+
         <script type="text/javascript" src="printPershendetje.js"></script>
     </main>
     <footer>

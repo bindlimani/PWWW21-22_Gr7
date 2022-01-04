@@ -9,11 +9,11 @@
             document.getElementById("log-in").innerHTML = "P\xEBrsh\xEBndetje " + localStorage.getItem("username") + '<span onclick="logout()" style="color:white;"> (\xC7ky\xE7u)</span>';
         }
         else {
-            document.getElementById("log-in").innerText = "Kycu";
+            document.getElementById("log-in").innerText = "Kyçu";
         }
 
 function logout() {
-    document.getElementById("log-in").innerText = "Kycu";
+    document.getElementById("log-in").innerText = "Kyçu";
     if(sessionStorage.getItem("username") != null) {
         sessionStorage.removeItem("username");
         alert("Shky\xE7ja u b\xEB me sukses");
