@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="al" manifest="example.appcache">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         body {
             margin: 0;
+
         }
 
         canvas {
@@ -118,10 +119,53 @@
             myRightBtn.update();
             myGamePiece.update();
         }
+        var w;
+        function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("webworker.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
 
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
     </script>
 
     <p>Kliko tek butonat e zi për të lëvizur butonin e verdhë.</p>
+    <p>Koha per te cilen katrori i verdhe vendoset ne te ziun <output id="result"></output></p>
+<button onclick="startWorker()">Fillo Lojen</button>
+<button onclick="stopWorker()">Perfundo Lojen</button>
+
+<script>
+var w;
+
+function startWorker() {
+  if (typeof(Worker) !== "undefined") {
+    if (typeof(w) == "undefined") {
+      w = new Worker("webworker.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
+
 </body>
 
 </html>
