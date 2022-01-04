@@ -4,7 +4,7 @@ body{
 .llojet-e-ofertave ul{
     list-style: none;
     display: grid;
-    grid-template-columns: 900px 900px;
+    grid-template-columns: 50% 50%;
     background-color: #EDEDED;
     padding:0;
 }
@@ -43,17 +43,19 @@ main {
     }
 #telefonia-mobile{
     display: grid;
-    grid-template-columns:  420px 420px 420px 420px;
+    grid-template-columns:  23% 23% 23% 23%;
+    margin-left: 5%;
 }
 #televizioni{
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
-    margin-left: 50px;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin-left: 5%;
+    
 }
 #interneti{
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
-    margin-left: 50px;
+    grid-template-columns: 23% 23% 23% 23%;
+    margin-left: 5%;
 }
 
 ul {
@@ -104,7 +106,7 @@ i{
     font-size: 70px;
 }
 .roaming table{
-    padding:0 100px;
+    padding:0 15%;
 
 }
 li i{

@@ -39,6 +39,7 @@ footer p{
     color:#4C555E;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
 
 }
 footer form input{
@@ -48,6 +49,7 @@ footer form input{
     color:#807D77;
     border: none;
     border-radius: 4px;
+    margin:2px;
 }
 footer form button{
     width: 81px;

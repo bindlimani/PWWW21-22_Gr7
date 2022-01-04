@@ -1,8 +1,11 @@
-main * {
-    background: none;
-    color:white;
+.navigimi {
+    text-decoration: none;
 }
 
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 table {
     background: white;
 }
