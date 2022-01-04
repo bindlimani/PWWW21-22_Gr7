@@ -64,3 +64,10 @@ footer form button{
     color: #7F7D77;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+footer button{
+    width: 81px;
+    height: 32px;
+    background-color: #4C555E;
+    border-radius: 5px;
+    color: #FFFFFF;
+}

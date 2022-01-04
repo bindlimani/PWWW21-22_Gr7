@@ -70,28 +70,28 @@
 
     <main>
         <nav>
-            <ul>
+            <ul style="list-style: none;">
                 <li>
-                    <a href="MainPage.html">Ballina</a>
+                    <a class="navigimi" href="MainPage.html">Ballina</a>
                 </li>
                 <li>
-                    <a href="rrethnesh.html">Rreth nesh</a>
-                </li>
-
-                <li>
-                    <a href="Produktet.html">Produktet</a>
+                    <a class="navigimi" href="rrethnesh.html">Rreth nesh</a>
                 </li>
 
                 <li>
-                    <a href="Konkurset.html">Konkurset</a>
+                    <a class="navigimi" href="Produktet.html">Produktet</a>
                 </li>
 
                 <li>
-                    <a href="ofertat.html">Ofertat</a>
+                    <a class="navigimi" href="Konkurset.html">Konkurset</a>
                 </li>
 
                 <li>
-                    <a href="faqs.html">Pyetjet</a>
+                    <a class="navigimi" href="ofertat.html">Ofertat</a>
+                </li>
+
+                <li>
+                    <a class="navigimi" href="faqs.html">Pyetjet</a>
                 </li>
             </ul>
         </nav>
@@ -134,43 +134,44 @@
             <tr>
                 <td>
                     <p>
-                        DEB eshte nje kompani telekomunikimi me baze
-                        ne Kosove e themeluar ne vitin 2020
-                        Nga nje kompani lokale me baze ne Prishtine, DEB u zhvillua
-                        dhe tani eshte nje nder ofruesit me te mire te sherbimeve te
-                        telekomunikacionit.
+                        DEB eshte nje kompani telekomunikimi me baze 					
+                        ne Kosove e themeluar ne vitin 2020					
+                        Nga nje kompani lokale me baze ne Prishtine, DEB u zhvillua					
+                        dhe tani eshte nje nder ofruesit me te mire te sherbimeve te					
+                        telekomunikacionit. 					
 
                     </p>
-                    <a href="#">Lexo me shume</a>
+                    <a class="lexo-me-shume" href="rrethnesh.html">Lexo me shume »</a>
                 </td>
                 <td rowspan="3">
-                    <ul>
+                    <ul class="linqe-te-tjera" style="list-style: none;">
                         <li>
-                            <a href="#">Pakoja MIX</a>
+                            <a href="ofertat.html">Pakoja MIX</a>
                         </li>
                         <li>
-                            <a href="#">Pakoja ME SHOQNI</a>
+                            <a href="ofertat.html">Pakoja ME SHOQNI</a>
                         </li>
                         <li>
-                            <a href="#">Pakoja FAMILY</a>
+                            <a href="ofertat.html">Pakoja FAMILY</a>
                         </li>
                         <li>
-                            <a href="#">Pakoja BIG FAMILY</a>
+                            <a href="ofertat.html">Pakoja BIG FAMILY</a>
                         </li>
                         <li>
-                            <a href="#"> Pakoja START</a>
+                            <a href="ofertat.html"> Pakoja START</a>
                         </li>
                         <li>
-                            <a href="#">Pakoja SUPER START</a>
+                            <a href="ofertat.html">Pakoja SUPER START</a>
                         </li>
 
                     </ul>
                 </td>
                 <td>
                     <p>Regjistrohuni ne gazeten tone elektronike dhe merrni ofertat tona te paret </p>
+                    <form>
                     <input type="text" title="Emri" placeholder="Emri">
                     <input type="email" title="Email" placeholder="Shkruani emailin tuaj">
-                    <button type="submit">Submit</button>
+                    <button type="submit">Submit</button></form>
                 </td>
             </tr>
             <tr>
@@ -179,13 +180,16 @@
             </tr>
             <tr>
                 <td>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore esse at voluptates,
-                        reprehenderit aspernatur consequuntur omnis fugiat optio quam, quia officiis id aliquid voluptas
-                        illo delectus modi excepturi itaque deleniti.
+                    <p>Si mund ti gjej koordinatat per lokacionin tim?.</p>
 
-                    </p>
+                    <button onclick="getLocation()">Kliko ketu</button>
+                    <p id="demo"></p>
+                    
+                    <script type="text/javascript" src="location.js">
 
-                    <a href="#">Lexo me shume</a>
+                    </script>
+
+                    <a class="lexo-me-shume" href="#">Lexo me shume »</a>
                 </td>
                 <td>
                     Tel:047 740 470 <br>
