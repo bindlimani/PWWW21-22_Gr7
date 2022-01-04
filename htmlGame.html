@@ -31,6 +31,7 @@
             myLeftBtn = new component(30, 30, "black", 20, 40);
             myRightBtn = new component(30, 30, "black", 80, 40);
             myGameArea.start();
+            startWorker();
         }
 
 
@@ -38,8 +39,8 @@
             canvas: document.createElement("canvas"),
             start: function () {
 
-                this.canvas.width = 2040;
-                this.canvas.height = 880;
+                this.canvas.width = 1600;
+                this.canvas.height = 500;
                 this.context = this.canvas.getContext("2d");
 
                 document.body.insertBefore(this.canvas, document.body.childNodes[0]);
@@ -78,10 +79,11 @@
                 ctx.fillStyle = color;
                 ctx.fillRect(this.x, this.y, this.width, this.height);
                 ctx.fillStyle = 'red';
-                ctx.fillRect(2010, 850, this.width, this.height);
-                if (this.x > 2000 && this.y > 840) {
+                ctx.fillRect(1570, 470, this.width, this.height);
+                if (this.x > 1560 && this.y > 460) {
                     ctx.fillStyle = 'green';
-                    ctx.fillRect(2010, 850, this.width, this.height);
+                    ctx.fillRect(1570, 470, this.width, this.height);
+                    stopWorker();
                 }
             }
             this.clicked = function () {
@@ -139,10 +141,8 @@ function stopWorker() {
 }
     </script>
 
-    <p>Kliko tek butonat e zi për të lëvizur butonin e verdhë.</p>
-    <p>Koha per te cilen katrori i verdhe vendoset ne te ziun <output id="result"></output></p>
-<button onclick="startWorker()">Fillo Lojen</button>
-<button onclick="stopWorker()">Perfundo Lojen</button>
+<p>Kliko tek butonat e zi për të lëvizur butonin e verdhë.</p>
+<p>Koha për të cilën katrori i verdhë vendoset ne të kuqin <output id="result"></output></p>
 
 <script>
 var w;
@@ -155,9 +155,7 @@ function startWorker() {
     w.onmessage = function(event) {
       document.getElementById("result").innerHTML = event.data;
     };
-  } else {
-    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
-  }
+  } 
 }
 
 function stopWorker() {
